@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas 1</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #4D83AA;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 800px;
+            margin: 20px auto;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .header {
+            background: #E2D800;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: #032152;
+            border-top: 10px dotted #4D83AA;
+        }
+
+        .main {
+            overflow: hidden;
+            background: #4D83AA; /* warna bawah menu */
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            width: 300px;
+            padding: 20px;
+            background: #eeeeee;
+            border-right: 3px dotted #032152;
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .sidebar h3,
+        .sidebar h4 {
+            margin-top: 0;
+            border-bottom: 2px dotted #032152;
+            padding-bottom: 5px;
+            color: #032152;
+        }
+
+        .sidebar a {
+            display: block;
+            margin: 8px 0;
+            text-decoration: none;
+            color: #032152;
+        }
+
+        .sidebar a:hover {
+            font-weight: bold;
+        }
+
+        .sidebar input[type="text"] {
+            width: 150px;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .sidebar button {
+            padding: 5px 10px;
+            background: #ddd;
+            border: 1px solid #aaa;
+            cursor: pointer;
+        }
+
+        /* CONTENT */
+        .content {
+            width: 500px;
+            padding: 20px;
+            background: #f2f2f2;
+            float: left;
+            min-height: 600px;
+            box-sizing: border-box;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #9CBCD0;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background: #032152;
+            color: white;
+        }
+
+        .footer-row {
+            background: #d9e3ea;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        Soal Pertama :)
+    </div>
+
+    <div class="main">
+
+        <div class="sidebar">
+            <h3>Menu</h3>
+            <a href="tugas1.html">Soal Pertama</a>
+            <a href="tugas2.html">Soal Kedua</a>
+
+            <h4>Search</h4>
+            <input type="text" placeholder="Search this web">
+            <button>GO!</button>
+        </div>
+
+        <div class="content">
+            <h2>Tabel Sesuatu</h2>
+
+            <table>
+                <tr>
+                    <th>No</th>
+                    <th>Huruf</th>
+                    <th>Keterangan</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>A</td>
+                    <td>Pertama</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>B</td>
+                    <td>Kedua</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>C</td>
+                    <td>Ketiga</td>
+                </tr>
+                <tr class="footer-row">
+                    <td colspan="3">Data di atas adalah data fiktif</td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
