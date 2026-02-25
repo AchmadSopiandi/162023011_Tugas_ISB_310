@@ -1,0 +1,44 @@
+<!--saya mengerjakan tugas ini sendiri tanpa melakukan kecurangan seperti 
+menggunakan, mendupliaksi kode perogram kode program yang ada. 
+jia saya melakukan kecurangan dalam perngerjaan tugas ini maka saya 
+siap menerima sanksi atau hukuman dari 
+dosen mata kuliah dan tuhan / allah  swt-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click Counter</title>
+</head>
+
+<body>
+    <button onclick="clickCounter()">Click me!</button>
+
+    <p id="result"></p>
+    <p>Click the button to see the counter increase.</p>
+    <p>Close the browser tab (or window), and open it again. The counter will continue.</p>
+    <script>
+        window.onload = function() {
+            if (localStorage.count) {
+                document.getElementById("result").innerHTML =
+                    "You have clicked the button " +
+                    localStorage.count +
+                    " time(s) in this session.";
+            }
+        }
+        function clickCounter() {
+            if (localStorage.count) {
+                localStorage.count = Number(localStorage.count) + 1;
+            } else {
+                localStorage.count = 1;
+            }
+            document.getElementById("result").innerHTML =
+                "You have clicked the button " +
+                localStorage.count +
+                " time(s) in this session.";
+        }
+    </script>
+
+</body>
+</html>
