@@ -11,7 +11,7 @@ Repository ini berisi kumpulan tugas mata kuliah **ISB-310 Sistem Informasi Web*
 
 ## 🗂️ Pengumpulan Tugas
  Week 2
-Berisi tugas pada pertemuan minggu ke-2.
+https://github.com/AchmadSopiandi/162023011_Tugas_ISB_310/tree/main/week%202
 
  Week 3
 Berisi tugas pada pertemuan minggu ke-3.
