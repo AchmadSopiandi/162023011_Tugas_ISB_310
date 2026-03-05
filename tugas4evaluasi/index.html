@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+    <div class="header"></div>
+
+    <div class="content">
+        <div class="sidebar">
+            <ul>
+                <li onclick="goHome()">Home</li>
+                <li onclick="showMenu()">Menu</li>
+                <li onclick="showCalculator()">Calculator</li>
+            </ul>
+        </div>
+
+        <div class="main">
+
+            <div id="homePage">
+                <div class="home-content">
+                    klik button disamping >> 
+                    <button class="btn-shout" onclick="shout()">Shout</button>
+                </div>
+            </div>
+
+            <div id="menuPage" class="hidden">
+
+                <table class="menu-table">
+                    <tr>
+                        <th>No</th>
+                        <th>Makanan/Minuman</th>
+                        <th>Harga</th>
+                        <th>Pesan</th>
+                    </tr>
+            
+                    <tr>
+                        <td>1</td>
+                        <td>Bakso Istimewa</td>
+                        <td>@ Rp 12000</td>
+                        <td><input type="number" id="bakso" value="0" min="0" oninput="hitungTotal()"></td>
+                    </tr>
+            
+                    <tr>
+                        <td>2</td>
+                        <td>Soto Spesial</td>
+                        <td>@ Rp 10000</td>
+                        <td><input type="number" id="soto" value="0" min="0" oninput="hitungTotal()"></td>
+                    </tr>
+            
+                    <tr>
+                        <td>3</td>
+                        <td>Mie Ayam Super</td>
+                        <td>@ Rp 15000</td>
+                        <td><input type="number" id="mie" value="0" min="0" oninput="hitungTotal()"></td>
+                    </tr>
+            
+                    <tr>
+                        <td colspan="3">Jumlah Total</td>
+                        <td><input type="text" id="total" value="0" readonly></td>
+                    </tr>
+            
+                    <tr>
+                        <td colspan="3">Diskon</td>
+                        <td><input type="text" id="diskon" value="0" readonly></td>
+                    </tr>
+            
+                    <tr>
+                        <td colspan="3"><b>Jumlah Bayar</b></td>
+                        <td><input type="text" id="bayar" value="0" readonly></td>
+                    </tr>
+                </table>
+            
+                <button class="btn-reset" onclick="resetMenu()">Reset</button>
+            
+            </div>
+
+                     <div id="calculatorPage" class="hidden">
+
+                <div class="calc-box">
+                    <input type="number" id="angka1">
+            
+                    <select id="operator">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                    </select>
+            
+                    <input type="number" id="angka2">
+            
+                    = 
+            
+                    <input type="text" id="hasil" readonly>
+                </div>
+            
+                <br>
+            
+                <button onclick="hitungManual()">Hitung</button>
+                <button onclick="resetCalc()">Reset</button>
+            </div> 
+
+        </div>
+            </div>
+    <div class="footer">
+        280224<br>
+        Sistem Informasi | ITENAS 2024
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
