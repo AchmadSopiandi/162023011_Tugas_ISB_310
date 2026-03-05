@@ -1,0 +1,196 @@
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #5b3a3a; /
+}
+
+.wrapper {
+    width: 95%;
+    margin: 20px auto;
+    background-color: #d79a44;
+    border: 6px solid #4b2e2e;
+}
+
+.header {
+    height: 360px; /* 180px x 2 baris */
+    background-image: url('gambar.jpg');
+    background-repeat: repeat;
+    background-size: 33.33% 180px;
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    width: 160px;
+    background-color: #d79a44;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    padding: 12px;
+    border-bottom: 2px solid #5b3a3a;
+    cursor: pointer;
+    color: blue;
+}
+
+.sidebar li:hover {
+    background-color: #b37425;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+.menu-table {
+    width: 80%;
+    background-color: yellow;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.menu-table th,
+.menu-table td {
+    border: 1px solid black;
+    padding: 6px;
+}
+
+.menu-table input {
+    width: 70px;
+}
+
+.menu-table input[readonly] {
+    background-color: #eee;
+}
+
+button {
+    background-color: black;
+    color: yellow;
+    padding: 6px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.btn-reset {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.footer {
+    background-color: #ffa500;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+    margin-top: 20px;  /* ini yang bikin turun */
+}
+
+.footer p {
+    margin: 2px 0; /* jarak antar baris kecil */
+}
+
+.hidden {
+    display: none;
+}
+
+.calc-box {
+    margin-top: 20px;
+}
+
+.calc-box input,
+.calc-box select {
+    width: 60px;
+    padding: 4px;
+    margin: 5px;
+}
+
+.calc-box input[readonly] {
+    background-color: #eee;
+}
+
+.garis-container {
+    max-width: 900px;
+}
+
+.garis-container h2 {
+    margin-top: 10px;
+}
+
+.garis-container p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.garis-form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.garis-form label {
+    display: inline-block;
+    width: 230px;
+}
+
+.garis-form select {
+    padding: 4px;
+}
+
+.garis-output {
+    margin-top: 20px;
+}
+
+.garis-output input {
+    width: 120px;
+    padding: 4px;
+    background-color: #eee;
+    border: 1px solid #999;
+}
+
+#artiGaris {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+
+.output-box {
+    margin-top: 20px;
+}
+
+.output-row {
+    margin: 8px 0;
+}
+
+.output-row label {
+    display: inline-block;
+    width: 120px;
+}
+
+.output-row input {
+    width: 220px;
+    padding: 4px;
+    background-color: #eee;
+    border: 1px solid #999;
+}
+
+#judulGaris{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:bold;
+    }
+    
+    #artiGaris{
+    margin-top:10px;
+    line-height:1.6;
+    text-align:justify;
+    }
